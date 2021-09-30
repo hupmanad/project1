@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/stylesheet.css">
+        
+        <style>
+            body{
+                display: flex;
+                flex-direction: column;
+                min-height: 100vh;
+                margin: 0px;
+            }
+            .core{
+                display: flex;
+                flex-direction: row;
+                flex-grow: 1;
+            }
+            aside{
+                background-color: aliceblue;
+                flex-basis: 150px;
+                padding: 5px;
+                font-size: smaller;
+            }
+            main{
+                display: flex;
+                flex-direction: column;
+                flex-grow: 1;
+                flex-basis: 0;
+                padding: 10px; 
+                justify-content: space-between;
+            }
+            .piccontainer{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .picture{
+                float: right;
+            }
+            div.linkpic{
+                text-align: center;
+                font-size: smaller;
+                text-indent: 0;
+                display: table;
+            }
+            div.linkpic:hover{
+                box-shadow: inset 0 0 7px gray;
+                border-radius: 5px;
+            }
+            .headtext{
+                animation: 4s linear 1s infinite alternate slidein;
+            }
+            @keyframes slidein {
+                from{
+                    margin-left: 75%;
+                }
+                to{
+                    margin-left: 8%;
+                }
+            }
+        </style>
+    </head>
+
+    <header>
+        <div class="headcontainer">
+            <h1 class="headtext">Andrew's Website</h1>
+        </div>
+     </header>
+
+    <div class = "core">
+        <aside class = "left">
+            <h3>Videos that I think also cover these games well</h3>
+            <p>
+                <a href="https://www.youtube.com/watch?v=gzF7aHxk4Y4">Fallout: New Vegas Is Genius, And Here's Why</a>
+            </p>
+            <p>
+                <a href="https://www.youtube.com/watch?v=rxOKEsBx4NU">Ross's Game Dungeon: Deus Ex</a>
+            </p>
+            <p>
+                <a href="https://www.youtube.com/watch?v=Wnoaf6Zc3wk">Reviewing EVERY Hitman</a>
+            </p>
+            <p>
+                <a href="https://www.youtube.com/watch?v=BIDxJ-dUG4I">Team Fortress 2 Retrospective</a>
+            </p>
+        </aside>
+        <main>
+            <div class="maincontainer">
+                <h2>Andrew's Homepage</h2>
+                <p>
+                    <img class="picture" src="https://picsum.photos/250/250?random=1" alt="Random Photo">
+                    Welcome to Andrew's new website! Today, I want to showcase some of the games I played in my life that I really like.
+                    <br>Now, someone may wonder, why would you do this? Who cares? Well, recently I realized that while I enjoy a lot of 
+                    <br>games, I often don't know how to really put my appreciation for them into words. If I wanted to describe why I 
+                    <br>enjoy something, saying it's fun is a great start! But I also want to be able to go into greater detail on why 
+                    <br>extactly I think they're fun. Plus, it's nice to imagine other people seeing this and wanting to try these ones 
+                    <br>for themselves if they haven't already. Personally, I find them to be some of the best I have played, and since
+                    <br>a lot of them are a bit older it would be great to know that other people are starting to play them again.
+                </p>
+                <p>Click on the images below to find out more about the games!</p>
+            </div>
+            <div class="piccontainer">
+                <div class="linkpic">
+                    <a href="deusex.html">
+                    <p><img src="images/deusex.png" alt="Deus Ex boxart"></p>
+                    </a>
+                    <p>Deus Ex</p>
+                </div>
+                <div class="linkpic">
+                    <a href="newvegas.html">
+                    <p><img src="images/newvegas.jpg" alt="Fallout: New Vegas boxart"></p>
+                    </a>
+                    <p>Fallout: New Vegas</p>
+                </div>
+                <div class="linkpic">
+                    <a href="hitman.html">
+                    <p><img src="images/hitman.jpg" alt="Hitman: Contracts boxart"></p>
+                    </a>
+                    <p>Hitman: Contracts</p>
+                </div>
+                <div class="linkpic">
+                    <a href="tf2.html">
+                    <p><img src="images/tf2.jpg" alt="Team Fortress 2 boxart"></p>
+                    </a>
+                    <p>Team Fortress 2</p>
+                </div>
+            </div>
+        </main>
+        <aside class = "right">
+            <h3>About the website</h3>
+            <p>Hello! This is just an introduction into my website! This is the first time I am making this sort of thing,
+                so please bear with me! I am planning to start this one by writing about some games that I like and working
+                from there. It's not a deeply adventurous creation yet, I just want it to be an interesting sort of new
+                experience. Hopefully I can make it into something special!
+            </p>
+            <p>Which game is your favorite?</p>
+            <form>
+                <input type="radio" id="deusex" name="favegame" value="Deus Ex">
+                <label for="deusex">Deus Ex</label><br>
+                <input type="radio" id="nv" name="favegame" value="Fallout: New Vegas">
+                <label for="nv">Fallout: New Vegas</label><br>
+                <input type="radio" id="hitman" name="favegame" value="Hitman: Contracts">
+                <label for="hitman">Hitman: Contracts</label><br>
+                <input type="radio" id="tf2" name="favegame" value="Team Fortress 2">
+                <label for="tf2">Team Fortress 2</label><br>
+            </form>
+        </aside>
+    </div>
+
+    <footer>
+        <h3>Email: hupmanad@dukes.jmu.edu</h3>
+        <a href="report.html">Report on requirements</a>
+    </footer>
+</html>

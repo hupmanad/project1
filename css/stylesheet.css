@@ -1,0 +1,36 @@
+header, footer{
+    font-family: sans-serif;
+    background-color: cornflowerblue;
+    flex-basis: 0;
+}
+header{
+    justify-content: center;
+}
+.links{
+    list-style-type: none;
+    padding: 5px;
+    margin: 0px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+.link>a{
+    color:white;
+    padding: 5px;
+    font-size: 1.5em;
+
+}
+.link>a:hover{
+    background-color: thistle;
+}
+.maintext{
+    background-color: white;
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+}
+.imgbox{
+    display: flex;
+    justify-content: center;
+}
